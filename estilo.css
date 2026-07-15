@@ -1,0 +1,57 @@
+/*Reset y configuracion global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*variables de color*/
+:root {
+    --primary:var(--primary);
+    --secondary:var(--secondary);
+    --accent:var(--accent);
+    --succes:var(--succes);
+    --light:var(--light);
+    --dark:var(--dark);
+    --white:var(--white);
+    --shadow:var(--shadow);
+}
+/*estilos generales*/
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(125deg, var(--secondary), color:blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    padding: 20px;
+}
+/*contenedor principal*/
+.login container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*tarjeta de login*/
+.login-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(red, green, blue, alpha);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(red, green, blue, alpha);
+}
+
+/*header de la tarjeta*/
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*campus del formulario*/
